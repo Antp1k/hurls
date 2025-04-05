@@ -5,7 +5,7 @@ Hurls short for historic urls is a **Firefox Extension** that was created so tha
 The user can create a wayback CDX API request with the following:
 - Add the domain, by placing "domain.com" into the domain input, which basically adds "?url=domain.com/*" into the final url.
 - Add a limit, by placing an integer like "50000", which is the default input, into the limit input, which basically adds "&limit=50000" into the final url. NOTE: The higher this is the more resources are required from your PC!
-- Check a subdomain option, that will add "*." before the domain, which will make the CDX API pull results with subdomains aswell.
+- Check the subdomain option, that will add "*." before the domain, which will make the CDX API pull results with subdomains aswell.
 - Add a date from which point in time the results should be pulled from, by placing a year like "2020" and "2021" into the date inputs, which will basically just add "&from=2020&to=2021" into the final url. According to the CDX API documentation it's also possible to use regular timestamps aswell, however I have not tried that out myself.
 - Add various filters available for the API such as, "mimetype" and "statuscode", which allow you to pull more specific type of urls from the CDX API, by pressing the "+ Filter" button and adding the filters such as "mimetype:application/json", which would basically add "&filter=mimetype:application/json" into the final url, allowing you to pull urls that use the corresponding mimetype form the CDX API. There are other filters available that can be read from the CDX API github page: https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server#collapsing
 
