@@ -1,6 +1,6 @@
 # v1.0.0
 
-This is a **Firefox Extension** that was created so that it'd be easier to interact with the wayback CDX API, and with the purpose of using it in security research.
+Hurls short for historic urls is a **Firefox Extension** that was created so that it'd be easier to interact with the wayback CDX API, and with the purpose of using it in security research.
 
 The user can create a wayback CDX API request URL with the following:
 - Add the domain, by placing "domain.com" into the domain input, which basically adds "?url=domain.com/*" into the final url.
