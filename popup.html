@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hiscan</title>
+    <style>
+      body {
+        width: 200px;
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+
+      #errors {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Filter examples:</h3>
+    <p>mimetype:text/html<br>!mimetype:image/*<br>statuscode:200<br>!statuscode:404</p>
+    <hr>
+    <h3>Options:</h3>
+    <div>
+      <form id="wayback">
+        <label for="subdomains">Subdomains:</label>
+        <input type="checkbox" id="subdomains" name="subdomains" value="subdomains"><br>
+        <label>Limit:</label>
+        <input type="text" id="resultsLimit" name="resultsLimit" value="50000" required><br>
+        <label>Domain:</label>
+        <input type="text" id="waybackDomain" name="waybackDomain" placeholder="example.org" required><br>
+        <div>
+          <input type="button" id="newFilter" value="+ Filter">
+        </div>
+        <label>Date (optional):</label>
+        <input type="text" id="from" name="from" placeholder="2020">
+        <input type="text" id="to" name="to" placeholder="2021">
+        <input type="submit" value="Start"><br>
+      </form>
+    </div>
+    <p id="errors"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>

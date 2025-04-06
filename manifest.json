@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Hurls",
+  "version": "1.0",
+  "description": "Get historic endpoints from wayback machine.",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs",
+    "webRequest"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[
+    {
+      "matches": ["<all_urls>"],
+      "js": ["results.js"]
+    }
+  ],
+  "browser_specific_settings":{
+    "gecko": {"id":"d49c8d0e95cfa26c9a44dfa0804393ce61c6d367@temporary-addon"}
+  }
+}
