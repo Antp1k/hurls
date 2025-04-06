@@ -32,3 +32,6 @@ This means that currently you'll need to load the extension everytime you start 
 3. From the settings button on the right of "Manage Your Extensions" title press "Debug Add-ons".
 
 4. In the "about:debugigng#/runtime/this-firefox" tab, press "Load Temporary Add-on..." and select the manifest.json file from the extensions directory.
+
+## Other information
+The CDX API is very slow and depending on your filters, limit and the domain you're doing the scan on the request could take a long time or even timeout. I've done couple of tests on netflix.com and had the request complete in around 5 minutes, which is pretty long, but it is what it is...
