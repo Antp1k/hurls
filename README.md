@@ -11,7 +11,7 @@
 
 - Add a date from which point in time the results should be pulled from, by placing a year like "2020" and "2021" into the date inputs, which will basically just add "&from=2020&to=2021" into the final url. According to the CDX API documentation it's also possible to use regular timestamps aswell, however I have not tried that out myself.
 
-- Add various filters available for the API such as, "mimetype" and "statuscode", which allow you to pull more specific type of urls from the CDX API, by pressing the "+ Filter" button and adding the filters such as "mimetype:application/json", which would basically add "&filter=mimetype:application/json" into the final url, allowing you to pull urls that use the corresponding mimetype form the CDX API. There are other filters available that can be read from the CDX API github page: https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server
+- Add various filters available for the API such as, "mimetype" and "statuscode", which allow you to pull more specific type of urls from the CDX API, by pressing the "+ Filter" button and adding the filters such as "mimetype:application/json", which would basically add "&filter=mimetype:application/json" into the final url, allowing you to pull urls that use the corresponding mimetype form the CDX API. There are other filters available that can be read from the CDX API github page: `https://github.com/internetarchive/wayback/tree/master/wayback-cdx-server`
 
 ##### The results of the request will then be placed into a new tab, which allows you to check the results in various forms:
 - You can get all the urls from the response, with no filters or anything placed, by pressing the "All Urls" button.
@@ -25,7 +25,7 @@
 Currently the only installation option is to load the extension as a temporary addon, in firefox, though I've applied the extension for the firefox addon store, but I don't know how long it'll take until it's possible to install it from there.
 This means that currently you'll need to load the extension everytime you start firefox, rather than it being "persistent". Thank mozilla for that one.
 
-1. Use "git clone https://github.com/Antp1k/hurls.git" in your shell.
+1. Use `git clone https://github.com/Antp1k/hurls.git` in your shell.
 
 2. Press the extensions button and press "Manage extensions" option or browse to "about:addons".
 
