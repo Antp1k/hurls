@@ -25,8 +25,10 @@
 Currently the only installation option is to load the extension as a temporary addon, in firefox, though I've applied the extension for the firefox addon store, but I don't know how long it'll take until it's possible to install it from there.
 This means that currently you'll need to load the extension everytime you start firefox, rather than it being "persistent". Thank mozilla for that one.
 
-1. Press the extensions button and press "Manage extensions" option or browse to "about:addons".
+1. Use "git clone https://github.com/Antp1k/hurls.git" in your shell.
 
-2. From the settings button on the right of "Manage Your Extensions" title press "Debug Add-ons".
+2. Press the extensions button and press "Manage extensions" option or browse to "about:addons".
 
-3. In the "about:debugigng#/runtime/this-firefox" tab, press "Load Temporary Add-on..." and select the manifest.json file from the extensions directory.
+3. From the settings button on the right of "Manage Your Extensions" title press "Debug Add-ons".
+
+4. In the "about:debugigng#/runtime/this-firefox" tab, press "Load Temporary Add-on..." and select the manifest.json file from the extensions directory.
