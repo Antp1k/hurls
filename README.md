@@ -22,9 +22,10 @@
 
 ## Installation
 
-Currently the only installation option is to load the extension as a temporary addon, in firefox, though I've applied the extension for the firefox addon store, but I don't know how long it'll take until it's possible to install it from there.
-This means that currently you'll need to load the extension everytime you start firefox, rather than it being "persistent". Thank mozilla for that one.
+You can now install the extension from firefox addon store:
+https://addons.mozilla.org/en-US/firefox/addon/hurls/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 
+Or load the extension for temporary use:
 1. Use `git clone https://github.com/Antp1k/hurls.git` in your shell.
 
 2. Press the extensions button and press "Manage extensions" option or browse to "about:addons".
