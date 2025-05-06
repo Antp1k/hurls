@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Hurls",
+  "version": "1.0.1",
+  "description": "Get historic endpoints from wayback machine.",
+  "background": {
+    "service_worker":"background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "webRequest"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions":["<all_urls>"],
+  "content_scripts":[
+    {
+      "matches": ["<all_urls>"],
+      "js": ["results.js"]
+    }
+  ]
+}
