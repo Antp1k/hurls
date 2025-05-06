@@ -1,4 +1,6 @@
-# v1.0.0
+# Hurls - v1.0.1
+- Added default dark mode
+- Added chrome support
 
 **Hurls** short for historic urls is a **Firefox Extension** that was created so that it'd be easier to interact with the wayback CDX API, and with the purpose of using it in security research.
 
@@ -21,18 +23,22 @@
 - You can get all the parameters from the response, with some regex filters placed to remove trashy parameters from the results, by pressing the "All Parameters" button. This differs from the endpoints in a way as you get all the parameters as single values like "query" rather than "?query=x&anotherparam=y" type of format.
 
 ## Installation
+#### Chrome:
+1. Use `git clone https://github.com/Antp1k/hurls.git` in your shell
+2. Open `chrome://extensions` in your browser
+3. Enable developer mode
+4. Press load unpacked
+5. Navigate to the hurls/chrome directory and select manifest.json
 
+#### Firefox
 You can now install the extension from firefox addon store:
 https://addons.mozilla.org/en-US/firefox/addon/hurls/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 
 Or load the extension for temporary use:
-1. Use `git clone https://github.com/Antp1k/hurls.git` in your shell.
-
-2. Press the extensions button and press "Manage extensions" option or browse to "about:addons".
-
-3. From the settings button on the right of "Manage Your Extensions" title press "Debug Add-ons".
-
-4. In the "about:debugigng#/runtime/this-firefox" tab, press "Load Temporary Add-on..." and select the manifest.json file from the extensions directory.
+1. Use `git clone https://github.com/Antp1k/hurls.git` in your shell
+2. Open `about:debugging#/runtime/this-firefox` in your browser
+3. Press `Load Temporary Add-on`
+4. Navigate to the hurls/firefox directory and select manifest.json
 
 ## Other information
 The CDX API is very slow and depending on your filters, limit and the domain you're doing the scan on the request could take a long time or even timeout. I've done couple of tests on netflix.com and had the request complete in around 5 minutes, which is pretty long, but it is what it is...
